@@ -17,3 +17,28 @@ Once translated (if needed), the headline text is vectorized using the TF-IDF (T
 The final prediction is sent back to the frontend and displayed to the user, along with the detected language and the translated headline if applicable. Error handling is included to manage issues like invalid URLs, missing headlines, and server errors.
 
 This project demonstrates full-stack development skills, including web scraping, NLP, machine learning, Flask API development, and frontend integration. It also showcases the ability to handle real-world challenges like multilingual input and unreliable web sources. The result is a lightweight but effective tool to combat the spread of fake news.
+
+**Requirements:**
+_________________
+
+🔧 System Requirements
+ ----------------------
+  1.Python 3.7 or above
+
+  2.Modern web browser (e.g., Chrome, Firefox)
+
+ Functional Requirements
+ -----------------------
+   1.Accept a URL from the user.
+
+   2.Scrape the headline from the URL.
+
+   3.Detect and translate non-English headlines.
+
+   4.Predict whether the news is fake or real using a trained ML model.
+
+   5.Display results (headline, prediction, language) to the user.
+
+
+  
+
