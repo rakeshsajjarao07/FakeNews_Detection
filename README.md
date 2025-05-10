@@ -1,7 +1,13 @@
 # FakeNews_Detection
+
 Fake News Detection App: Built a Flask web app that identifies fake news from URLs using NLP and machine learning. Used TF-IDF with Logistic Regression, integrated web scraping, multilingual support, and created a responsive frontend with HTML, CSS, and JS.
-#**Overview**
-Project Overview: Fake News Detection Web Application
+
+
+Project-Overview:
+________________
+
+Fake News Detection Web Application
+
 The Fake News Detection project is a machine learning-based web application designed to classify online news as either real or fake. Built using Python, Flask, and scikit-learn, this system leverages Natural Language Processing (NLP) techniques and a logistic regression model to detect misinformation from news article headlines.
 
 The application starts with a user submitting a URL of a news article through a simple and intuitive frontend built with HTML, CSS, and JavaScript. The backend uses BeautifulSoup and requests to scrape the webpage and extract the main headline. To ensure global usability, the system incorporates language detection (using langdetect) and automatic translation to English (using deep-translator) if the headline is in another language.
