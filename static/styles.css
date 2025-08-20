@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 50%, #a855f7 100%);
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    min-height: 64px;
+    backdrop-filter: blur(6px);
+    background: rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.brand {
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+.brand span { color: #ffdd57; }
+
+.nav-actions, .nav-user { display: flex; gap: 10px; align-items: center; }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+    min-height: calc(100vh - 64px);
+}
+
+.glass {
+    background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.08));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.card { padding: 28px; max-width: 760px; width: 100%; }
+
+h1 { margin: 0 0 8px 0; }
+p { margin: 0 0 16px 0; opacity: 0.95; }
+
+.form-inline { display: flex; gap: 12px; }
+
+#url-input {
+    flex: 1;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    outline: none;
+    font-size: 16px;
+    color: #0b1220;
+}
+
+.btn { 
+    padding: 10px 16px; border: 0; border-radius: 10px; cursor: pointer; 
+    font-weight: 600; color: #0b1220;
+}
+.btn.primary { background: #ffdd57; }
+.btn.accent { background: #34d399; }
+.btn.ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.35); }
+.btn:hover { filter: brightness(0.95); }
+
+.results { margin-top: 18px; }
+#headline { font-weight: 700; margin-bottom: 8px; }
+#result { font-size: 18px; color: #bbf7d0; }
+.error { color: #fecaca; }
+
+.loading { gap: 10px; align-items: center; display: none; }
+.spinner {
+    width: 16px; height: 16px; border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.35);
+    border-top-color: #ffdd57;
+    animation: spin 0.9s linear infinite;
+}
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.modal {
+    position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+    background: rgba(0,0,0,0.45);
+}
+.modal-content {
+    width: 100%; max-width: 420px; padding: 20px; border-radius: 14px;
+    background: #0b1220; color: #fff; border: 1px solid rgba(255,255,255,0.2);
+}
+.modal-content form { display: flex; flex-direction: column; gap: 10px; }
+.modal-content input { padding: 10px 12px; border-radius: 10px; border: 1px solid #334155; outline: none; }
